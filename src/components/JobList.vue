@@ -8,12 +8,12 @@
         :key="index"
       >
         <div>
-          <a :href="`/positions/${job.id}`"
+          <router-link :to="`/positions/${job.id}`"
             ><h2
               class="text-lg text-blue-400 font-semibold hover:underline cursor:pointer"
             >
               {{ job.title }}
-            </h2></a
+            </h2></router-link
           >
 
           <h4>

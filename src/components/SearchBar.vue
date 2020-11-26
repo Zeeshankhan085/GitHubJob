@@ -27,12 +27,9 @@
       </div>
 
       <div class=" flex mt-auto ml-8">
-        <a
-          :href="`/positions?${queryString}`"
-          class="focus:outline-none bg-green-500 px-8 h-8"
-        >
-          Search
-        </a>
+        <router-link :to="{ path: `/positions/${queryString}` }">
+          <h6 class="focus:outline-none bg-green-500 px-8 h-8">Search</h6>
+        </router-link>
       </div>
     </div>
   </div>

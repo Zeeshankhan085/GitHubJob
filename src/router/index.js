@@ -13,14 +13,14 @@ const routes = [
     component: Home,
   },
   {
+    path: "/positions",
+    name: "SearchPage",
+    component: SearchPage,
+  },
+  {
     path: "/positions/:id",
     name: "JobDetail",
     component: JobDetail,
-  },
-  {
-    path: "/position*",
-    name: "SearchPage",
-    component: SearchPage,
   },
 ];
 
