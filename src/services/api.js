@@ -4,7 +4,6 @@ const ROOT_URL = "https://cors-anywhere.herokuapp.com/https://jobs.github.com";
 
 export default {
   searchJobs: function(queryString) {
-    console.log("hello");
     //   const URL = queryString.checked ? `${ROOT_URL}/positions.json?{}`
 
     // console.log(

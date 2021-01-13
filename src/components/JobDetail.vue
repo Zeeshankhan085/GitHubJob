@@ -1,7 +1,7 @@
 <template>
-  <div class="px-20">
-    <div class="shadow-2xl w-3/5 px-16 m-auto">
-      <div class="px-4 py-8 m-auto" v-if="currentJob">
+  <div class="w-full px-2 md:w-3/5 m-auto">
+    <div v-if="currentJob" class="shadow-2xl">
+      <div class="px-4 py-8 m-auto">
         <h4 class="text-gray-600 font-semibold">{{ currentJob.location }}</h4>
         <h2 class="text-2xl font-semibold">{{ currentJob.title }}</h2>
 
@@ -9,17 +9,18 @@
           class="mt-4 border-t-2 border-gray-200 leading-loose"
           v-html="`${addStyle(currentJob.description)}`"
         ></div>
-        <div class="mt-6 flex">
+        <div class="mt-6 w-full flex">
           <h2 class="text-lg mr-4">
             How To Apply <span class="fas fa-arrow-right inline-block"></span>
           </h2>
-          <div
-            class="text-blue-500 ml-2"
+          <a
+            class="text-blue-500 ml-2 block"
             v-html="currentJob.how_to_apply"
-          ></div>
+          ></a>
         </div>
       </div>
     </div>
+    <div v-else class="text-center p-4">Loading...</div>
   </div>
 </template>
 

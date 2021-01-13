@@ -1,12 +1,14 @@
 <template>
-  <div class="px-10 py-6 bg-navcolor  flex justify-between items-center">
+  <div class="px-4 py-4 md:px-16 bg-navcolor  flex items-center">
     <div>
-      <a class="text-2xl text-white" href="">GitHub Jobs</a>
+      <router-link to="/" class="text-sm sm:text-xl text-white" href=""
+        >GitHub Jobs</router-link
+      >
     </div>
-    <div>
-      <a class="px-4 text-white" href="">All jobs</a>
-      <a class="px-4 text-white " href="">Post a job </a>
-      <a class="px-4 text-white" href="">How it works</a>
+    <div class="ml-auto">
+      <a class="text-xs md:text-sm ml-2 text-white" href="">All jobs</a>
+      <a class="text-xs md:text-sm ml-2  text-white " href="">Post a job </a>
+      <a class="text-xs md:text-sm ml-2 text-white" href="">How it works</a>
     </div>
   </div>
 </template>

@@ -1,24 +1,18 @@
 <template>
-  <div class="home">
-    <Header />
-    <SearchBar />
-    <Footer />
+  <div>
+    <!-- <Header /> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import SearchBar from "@/components/SearchBar.vue";
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
-// import JobSearch from "@/components/JobSearch.vue";
+// import Header from "@/components/Header.vue";
 
 export default {
   name: "Home",
   components: {
-    SearchBar,
-    Header,
-    Footer
+
+    // Header
   }
 };
 </script>
